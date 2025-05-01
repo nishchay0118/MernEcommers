@@ -49,5 +49,5 @@ jobs:
             # Pull latest image
             sudo docker pull ${{ secrets.DOCKER_USERNAME }}/img:latest
  
-            # Run new container
+            # Run new  container
             sudo docker run -d -p 5000:5000 --name contd ${{ secrets.DOCKER_USERNAME }}/img:latest
