@@ -40,8 +40,8 @@ jobs:
           port: ${{ secrets.EC2_PORT }}
           script: |
             # Stop and remove old container
-            sudo docker stop img || true
-            sudo docker rm img || true
+            sudo docker stop contd || true
+            sudo docker rm contd || true
  
             # Remove old image
             sudo docker rmi -f ${{ secrets.DOCKER_USERNAME }}/img:latest || true
